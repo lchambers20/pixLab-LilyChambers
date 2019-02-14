@@ -24,13 +24,16 @@ public class PictureTester
   {
     Picture beach = new Picture("images/beach.jpg");
     beach.explore(); // comment these out in repl.it
-    beach.KeepOnlyBlue();
+    beach.keepOnlyBlue();
     beach.explore(); // comment these out in repl.it
 
     // uncomment this in repl.it to test your code!!
     // beach.write("imagesOutput/beach.jpg");
   }
 
+  public static void fixUnderwater(){
+
+  }
   public static void testNegate()
   {
     Picture beach = new Picture("images/beach.jpg");
@@ -66,6 +69,7 @@ public class PictureTester
 
   }
 
+
   public static void testGrayscale()
   {
     Picture beach = new Picture("images/beach.jpg");
@@ -84,7 +88,7 @@ public class PictureTester
   public static void testMirrorHorizontalBotToTop(){
     Picture caterpillar = new Picture("images/caterpillar.jpg");
     caterpillar.explore();
-    caterpillar.mirrorHorizontalTopToBot();
+    caterpillar.mirrorHorizontalBotToTop();
     caterpillar.explore();
   }
   /** Method to test the collage method */
@@ -96,10 +100,10 @@ public class PictureTester
   }
 
   public static void testMirrorDiagonal(){
-    Picture caterpillar = new Picture("images/caterpillar.jpg");
-    caterpillar.explore();
-    caterpillar.mirrorDiagonal();
-    caterpillar.explore();
+    Picture beach = new Picture("images/beach.jpg");
+    beach.explore();
+    beach.mirrorDiagonal();
+    beach.explore();
   }
 
 
@@ -145,7 +149,7 @@ public class PictureTester
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
-    //testMirrorDiagonal();
+    testMirrorDiagonal();
     //testCollage();
     //testCopy();
     //testEdgeDetection();
